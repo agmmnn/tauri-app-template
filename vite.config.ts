@@ -1,12 +1,14 @@
 import { defineConfig } from "vite"
+import { resolve } from "node:path"
 
 // https://vitejs.dev/config/
 export default defineConfig(async () => ({
-  // resolve: {
-  //   alias: {
-  //     "@": path.resolve(__dirname, "./src"),
-  //   },
-  // },
+  plugins: [],
+  resolve: {
+    alias: {
+      "@/": resolve(__dirname, "./src"),
+    },
+  },
   // Vite options tailored for Tauri development and only applied in `tauri dev` or `tauri build`
   //
   // 1. prevent vite from obscuring rust errors
