@@ -1,3 +1,5 @@
+import "./styles.css"
+
 import { invoke } from "@tauri-apps/api/tauri"
 import { appWindow } from "@tauri-apps/plugin-window"
 
